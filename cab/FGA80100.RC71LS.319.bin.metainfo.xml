@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Richard Hughes <richard@hughsie.com> -->
+<component type="firmware">
+  <id>com.asus.test.firmwareS</id>
+  <name>Asus Test MCU</name>
+  <summary>Firmware testing emulated MCU update</summary>
+  <description>
+    <p>
+    Foo the bar
+    Bar the Foo
+    Foo the bar
+    Bar the Foo
+    Foo the bar
+    Bar the Foo
+    Foo the bar
+    Bar the Foo
+    Foo the bar
+    Bar the Foo
+    Foo the bar
+    Bar the Foo
+    </p>
+  </description>
+  <provides>
+    <firmware type="flashed">f7765461-3ff4-52a0-a4d8-d782b1f885ab</firmware>
+  </provides>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>proprietary</project_license>
+  <releases>
+    <release urgency="high" version="319" date="2024-10-20" >
+      <checksum filename="FGA80100.RC71LS.319.bin" target="content"/>
+      <description>
+        <p>This stable release fixes the following bugs:</p>
+      </description>
+    </release>
+  </releases>
+  <custom>
+    <value key="LVFS::VersionFormat">plain</value>
+    <value key="LVFS::UpdateProtocol">com.asus.hid</value>
+  </custom>
+</component>
+
