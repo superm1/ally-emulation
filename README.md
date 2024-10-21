@@ -8,7 +8,7 @@ Launching tests
 
 # Converting emulation data
 
-Use python like this:
+Use python like this by hand:
 
 	import base64
 	str="c0a0af013a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
@@ -20,8 +20,12 @@ This can done for both C0 and D0 commands.
 
 	./tshark.sh | grep ",d0" | sed 's/.*,//' > d0_commands.txt
 	./b64encode.py d0_commands.txt d0_b64.txt
-	./whitewash.py d0_b64.txt ./emulation-data/install.json 0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	./whitewash.py d0_b64.txt ./emulation-data/install.json  0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+	./tshark.sh | grep ",c0" | sed 's/.*,//' > c0_commands.txt
+	./b64encode.py c0_commands.txt c0_b64.txt
+	./whitewash.py c0_b64.txt ./emulation-data/install.json 
+	wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 # Helper to convert
 
