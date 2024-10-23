@@ -28,8 +28,7 @@ This can done for both C0 and D0 commands.
 
 	./tshark.sh | grep ",c0" | sed 's/.*,//' > c0_commands.txt
 	./b64encode.py c0_commands.txt c0_b64.txt
-	./whitewash.py c0_b64.txt ./emulation-data/install.json 
-	wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	./whitewash.py c0_b64.txt ./emulation-data/install.json  wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 # Helper to convert
 
