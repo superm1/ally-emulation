@@ -8,6 +8,10 @@ Launching tests
 
 # Converting emulation data
 
+Modified pcap2emulation with dissector support
+
+	./pcap2emulation.py wireshark/firmwareupdate319.pcapng  /tmp/ally.zip 0b05:1abe 048d:89db
+
 Use python like this by hand:
 
 	import base64
