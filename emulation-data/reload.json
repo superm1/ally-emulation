@@ -73,6 +73,55 @@
       ],
       "UsbEvents" : [
         {
+          "Id" : "GetSymlinkTarget:Attr=subsystem",
+          "Data" : "usb"
+        },
+        {
+          "Id" : "GetSymlinkTarget:Attr=driver",
+          "Data" : "usb"
+        },
+        {
+          "Id" : "ReadProp:Key=DEVTYPE",
+          "Data" : "usb_device"
+        },
+        {
+          "Id" : "ReadAttr:Attr=uevent",
+          "Data" : "MAJOR=189\nMINOR=2\nDEVNAME=bus/usb/001/003\nDEVTYPE=usb_device\nDRIVER=usb\nPRODUCT=b05/1abe/2\nTYPE=0/0/0\nBUSNUM=001\nDEVNUM=003"
+        },
+        {
+          "Id" : "ReadProp:Key=DEVNAME",
+          "Data" : "bus/usb/001/003"
+        },
+        {
+          "Id" : "ReadAttr:Attr=vendor"
+        },
+        {
+          "Id" : "ReadAttr:Attr=device"
+        },
+        {
+          "Id" : "ReadAttr:Attr=class"
+        },
+        {
+          "Id" : "ReadProp:Key=DEVTYPE",
+          "Data" : "usb_device"
+        },
+        {
+          "Id" : "ReadProp:Key=BUSNUM",
+          "Data" : "001"
+        },
+        {
+          "Id" : "ReadAttr:Attr=uevent",
+          "Data" : "MAJOR=189\nMINOR=2\nDEVNAME=bus/usb/001/003\nDEVTYPE=usb_device\nDRIVER=usb\nPRODUCT=b05/1abe/2\nTYPE=0/0/0\nBUSNUM=001\nDEVNUM=003"
+        },
+        {
+          "Id" : "ReadProp:Key=DEVNUM",
+          "Data" : "003"
+        },
+        {
+          "Id" : "GetStringDescriptor:DescIndex=0x02",
+          "Data" : "Ti1LRVkgRGV2aWNlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        {
           "Id" : "GetConfigurationIndex",
           "Data" : "MA=="
         },
@@ -111,6 +160,22 @@
         {
           "Id" : "GetStringDescriptorBytes:DescIndex=0x01,Langid=0x0409,Length=0x2c",
           "Data" : "QVNVU1RlSyBDb21wdXRlciBJbmMu"
+        },
+        {
+          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WtEBAQEA,Length=0x6",
+          "Data" : "WtEBAQEA"
+        },
+        {
+          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WkFTVVNUZWNoLkluYy4AAA==,Length=0x10",
+          "Data" : "WkFTVVNUZWNoLkluYy4AAA=="
+        },
+        {
+          "Id" : "ControlTransfer:Direction=0x00,RequestType=0x01,Recipient=0x01,Request=0x01,Value=0x035a,Idx=0x0002,Data=WgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=,Length=0x20",
+          "Data" : "WkFTVVNUZWNoLkluYy4AAGUAdgBpAGMAZQAAAAAAAAA="
+        },
+        {
+          "Id" : "ControlTransfer:Direction=0x00,RequestType=0x01,Recipient=0x01,Request=0x01,Value=0x035a,Idx=0x0002,Data=WgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=,Length=0x20",
+          "Data" : "WkFTVVNUZWNoLkluYy4AAGUAdgBpAGMAZQAAAAAAAAA="
         },
         {
           "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x0a,Idx=0x0000,Data=,Length=0x0",
@@ -153,16 +218,16 @@
           "Data" : "WkFTVVMgVGVjaC5JbmMuABAAAACgF1p003TQEbb+AKDJD1faAgAAAHC+w/ZGAgAAAQAAAAAAAACwLb2IRgIAAA=="
         },
         {
-          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WgUDMQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4QMYAgAAAPC/w/ZGAgAAAQAAAAAAAACAa3uIRgIAAA==,Length=0x40",
-          "Data" : "WgUDMQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4QMYAgAAAPC/w/ZGAgAAAQAAAAAAAACAa3uIRgIAAA=="
+          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WgUDMQAg,Length=0x6",
+          "Data" : "WgUDMQAg"
         },
         {
           "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WkFTVVMgVGVjaC5JbmMuAAIAAACgF1p003TQEbb+AKDJD1faAgAAAKAuottGAgAAAQAAAAAAAABAWHuIRgIAAA==,Length=0x40",
           "Data" : "WkFTVVMgVGVjaC5JbmMuAAIAAACgF1p003TQEbb+AKDJD1faAgAAAKAuottGAgAAAQAAAAAAAABAWHuIRgIAAA=="
         },
         {
-          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WgUEMQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1faAgAAANC+w/ZGAgAAAQAAAAAAAABAbXuIRgIAAA==,Length=0x40",
-          "Data" : "WgUEMQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1faAgAAANC+w/ZGAgAAAQAAAAAAAABAbXuIRgIAAA=="
+          "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WgUEMQAg,Length=0x6",
+          "Data" : "WgUEMQAg"
         },
         {
           "Id" : "ControlTransfer:Direction=0x01,RequestType=0x01,Recipient=0x01,Request=0x09,Value=0x035a,Idx=0x0002,Data=WkFTVVMgVGVjaC5JbmMuAAAAAAAAAAAAAAAAAAAAAAAAAAAACQQAAAEAAAAAAAAA//////////8AAAAAAAAAAA==,Length=0x40",
